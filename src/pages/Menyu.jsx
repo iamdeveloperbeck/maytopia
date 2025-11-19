@@ -88,7 +88,6 @@ export default function Dishes() {
               modules={[Navigation, Pagination, Keyboard]}
               spaceBetween={16}
               slidesPerView={1}
-              navigation
               pagination={{ clickable: true }}
               keyboard={{ enabled: true }}
               initialSlide={activeIndex}

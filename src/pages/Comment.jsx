@@ -52,15 +52,15 @@ const SubmitButton = memo(({
   isLoading, 
   isSubmitted 
 }) => (
-  <Button
+  <button
     type="submit"
     disabled={isLoading || isSubmitted}
-    className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
+    className={`w-full py-3 px-6 rounded-lg bg-blue-600 font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
       isLoading
-        ? "bg-muted text-muted-foreground cursor-not-allowed"
+        ? "bg-muted text-white cursor-not-allowed"
         : isSubmitted
         ? "bg-green-500 hover:bg-green-600 text-white"
-        : "bg-primary text-primary-foreground hover:bg-secondary active:scale-95"
+        : "bg-primary text-white hover:bg-secondary active:scale-95"
     }`}
   >
     <Send size={20} />
@@ -69,17 +69,17 @@ const SubmitButton = memo(({
       : isSubmitted
       ? "Yuborildi!"
       : "Xabarni Jo'natish"}
-  </Button>
+  </button>
 ));
 SubmitButton.displayName = "SubmitButton";
 
 const HeroSection = memo(() => (
-  <section className="bg-linear-to-br from-primary to-secondary py-12 md:py-16 px-4">
+  <section className="bg-blue-600 from-primary to-secondary py-12 md:py-16 px-4">
     <div className="max-w-6xl mx-auto text-center">
-      <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-3 text-balance">
+      <h1 className="text-4xl text-white md:text-5xl font-bold text-primary-foreground mb-3 text-balance">
         Fikringiz biz uchun muhim!
       </h1>
-      <p className="text-lg text-primary-foreground/90 text-balance">
+      <p className="text-lg text-white text-primary-foreground/90 text-balance">
         Bizning restoranimiz haqida o'z fikringizni yuboring va 2% chegirmaga ega bo'ling!
       </p>
     </div>
@@ -107,7 +107,7 @@ export default function Comment() {
   const { data: userId } = useCheckUser();
 
   const [formData, setFormData] = useState({
-    phone: "",
+    phone: "+998",
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -210,10 +210,10 @@ export default function Comment() {
                 </form>
               </div>
               <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/menu" className="w-full sm:w-auto">
-                  <Button className="w-full sm:w-auto bg-primary hover:bg-secondary text-primary-foreground font-bold py-3 px-8 text-lg rounded-lg transition-colors">
+                <Link to="/menu" className="w-full bg-blue-600 rounded-lg sm:w-auto">
+                  <div className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-bold py-3 px-8 text-lg rounded-lg transition-colors">
                     Menyuni ko'rish
-                  </Button>
+                  </div>
                 </Link>
               </div>
             </div>
