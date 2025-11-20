@@ -80,7 +80,7 @@ const HeroSection = memo(() => (
         Ovqatlarimiz, xizmat ko'rsatish, restoran haqida, yaxshi va salbiy fikrlaringizni shu yerda qoldiring, fikringiz biz uchun muhim!
       </h1>
       <p className="text-lg text-white text-primary-foreground/90 text-balance">
-        Bizning restoranimiz haqida o'z fikringizni yuboring va 2% chegirmaga ega bo'ling!
+        Bizning restoranimiz haqida o'z fikringizni yuboring va 3% chegirmaga ega bo'ling!
       </p>
     </div>
   </section>
