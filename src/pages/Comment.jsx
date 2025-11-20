@@ -76,11 +76,11 @@ SubmitButton.displayName = "SubmitButton";
 const HeroSection = memo(() => (
   <section className="bg-blue-600 from-primary to-secondary py-12 md:py-16 px-4">
     <div className="max-w-6xl mx-auto text-center">
-      <h1 className="text-4xl text-white md:text-5xl font-bold text-primary-foreground mb-3 text-balance">
-        Fikringiz biz uchun muhim!
+      <h1 className="text-3xl text-white md:text-2xl font-bold text-primary-foreground mb-3 text-balance">
+        Ovqatlarimiz, xizmat ko'rsatish, restoran haqida, yaxshi va salbiy fikrlaringizni shu yerda qoldiring, fikringiz biz uchun muhim!
       </h1>
       <p className="text-lg text-white text-primary-foreground/90 text-balance">
-        Bizning restoranimiz haqida o'z fikringizni yuboring va 2% chegirmaga ega bo'ling!
+        Bizning restoranimiz haqida o'z fikringizni yuboring va 3% chegirmaga ega bo'ling!
       </p>
     </div>
   </section>
@@ -197,7 +197,7 @@ export default function Comment() {
                     type="textarea"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Sizning savollaringiz yoki takliflaringizni yozing..."
+                    placeholder="Izohni shu yerda yozing..."
                     disabled={isLoading}
                     rows={6}
                   />
