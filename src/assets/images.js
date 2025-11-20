@@ -1,10 +1,10 @@
-import menu1 from "../assets/menuuz1.jpg";
-import menu2 from "../assets/menuuz2.jpg";
-import menu3 from "../assets/menuuz3.jpg";
-import menu4 from "../assets/menuuz4.jpg";
-import menu5 from "../assets/menuuz5.jpg";
-import menu6 from "../assets/menuuz6.jpg";
-import menu7 from "../assets/menuuz7.jpg";
+import menu1 from "../assets/menuuz1-5TPHLmTq.webp";
+import menu2 from "../assets/menuuz2-CH_DdBxT.webp";
+import menu3 from "../assets/menuuz3-B9CuZcqI.webp";
+import menu4 from "../assets/menuuz4-BqE-KGJG.webp";
+import menu5 from "../assets/menuuz5-jG7FX9IN.webp";
+import menu6 from "../assets/menuuz6-Byydq05M.webp";
+import menu7 from "../assets/menuuz7-CVASA1b5.webp";
 
 export default {
     menu1: menu1,
