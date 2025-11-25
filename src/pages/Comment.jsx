@@ -152,7 +152,7 @@ export default function Comment() {
         comment: formData.message,
         type: type,
         stol: stol ? parseInt(stol) : undefined,
-        skidkaPercent: 2
+        skidkaPercent: 5
       };
 
       await Promise.all([

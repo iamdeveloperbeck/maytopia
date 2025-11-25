@@ -79,7 +79,7 @@ export async function addComment(payload) {
   const docRef = await addDoc(reviewsRef, {
     userId,
     comment,
-    skidkaPercent: 2,
+    skidkaPercent: 5,
     type,
     stol: stol || "",
     phone,
