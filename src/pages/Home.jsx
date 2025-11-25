@@ -2,7 +2,6 @@
 import useCheckUser from "../hooks/useCheckUser";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import images from "../assets/images";
 
 export default function Home() {
   const { type } = useParams();
