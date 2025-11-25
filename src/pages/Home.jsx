@@ -48,7 +48,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src="/public/IMG_8427.mp4" controls></video>
+                <video src="/IMG_8427.mp4" controls></video>
               </div>
             )}
             {type === "2" && (
@@ -60,7 +60,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src="/public/IMG_8432.mp4" controls></video>
+                <video src="/IMG_8432.mp4" controls></video>
               </div>
             )}
           </div>
