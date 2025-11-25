@@ -2,8 +2,8 @@
 import useCheckUser from "../hooks/useCheckUser";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import vid1 from "../assets/videos/IMG_8427.mp4";
-import vid2 from "../assets/videos/IMG_8432.mp4";
+import vid1 from "../assets/IMG_8427.mp4";
+import vid2 from "../assets/IMG_8432.mp4";
 
 export default function Home() {
   const { type } = useParams();
