@@ -2,14 +2,12 @@
 import useCheckUser from "../hooks/useCheckUser";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import vid1 from "../assets/IMG_8427.mp4";
-import vid2 from "../assets/IMG_8432.mp4";
+import vid1 from "../assets/IMG_8427.MP4";
+import vid2 from "../assets/IMG_8432.MP4";
 
 export default function Home() {
   const { type } = useParams();
   const { isLoading } = useCheckUser();
-  const videoUrl1 = new URL(vid1, import.meta.url).href;
-  const videoUrl2 = new URL(vid2, import.meta.url).href;
 
   useEffect(() => {
     const video = document.getElementById("myVideo");
@@ -52,7 +50,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={videoUrl1} controls></video>
+                <video src={vid1} controls></video>
               </div>
             )}
             {type === "2" && (
@@ -64,7 +62,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={videoUrl2} controls></video>
+                <video src={vid2} controls></video>
               </div>
             )}
           </div>
