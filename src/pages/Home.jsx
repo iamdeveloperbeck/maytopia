@@ -1,4 +1,4 @@
-import Button from "../components/button";
+
 import useCheckUser from "../hooks/useCheckUser";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
@@ -49,7 +49,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={images.vid1} controls></video>
+                <video src="/public/IMG_8427.mp4" controls></video>
               </div>
             )}
             {type === "2" && (
@@ -61,7 +61,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={images.vid2} controls></video>
+                <video src="/public/IMG_8432.mp4" controls></video>
               </div>
             )}
           </div>
