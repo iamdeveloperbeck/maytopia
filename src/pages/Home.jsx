@@ -2,6 +2,8 @@
 import useCheckUser from "../hooks/useCheckUser";
 import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import vid1 from "../assets/videos/IMG_8427.mp4";
+import vid2 from "../assets/videos/IMG_8432.mp4";
 
 export default function Home() {
   const { type } = useParams();
@@ -48,7 +50,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src="/IMG_8427.mp4" controls></video>
+                <video src={vid1} controls></video>
               </div>
             )}
             {type === "2" && (
@@ -60,7 +62,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src="/IMG_8432.mp4" controls></video>
+                <video src={vid2} controls></video>
               </div>
             )}
           </div>
