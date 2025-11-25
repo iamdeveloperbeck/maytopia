@@ -8,6 +8,8 @@ import vid2 from "../assets/videos/IMG_8432.mp4";
 export default function Home() {
   const { type } = useParams();
   const { isLoading } = useCheckUser();
+  const videoUrl1 = new URL(vid1, import.meta.url).href;
+  const videoUrl2 = new URL(vid2, import.meta.url).href;
 
   useEffect(() => {
     const video = document.getElementById("myVideo");
@@ -50,7 +52,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={vid1} controls></video>
+                <video src={videoUrl1} controls></video>
               </div>
             )}
             {type === "2" && (
@@ -62,7 +64,7 @@ export default function Home() {
               //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // ></iframe>
               <div className="">
-                <video src={vid2} controls></video>
+                <video src={videoUrl2} controls></video>
               </div>
             )}
           </div>
