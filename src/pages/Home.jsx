@@ -33,7 +33,7 @@ export default function Home() {
       {/* Featured YouTube Video Section */}
       <section className="h-screen">
         <div className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
-          <div className="relative w-[50%] h-full sm:h-auto sm:w-full">
+          <div className="relative w-[50%] h-full md:h-auto md:w-full">
             {/* <video
               id="myVideo"
               src="https://youtu.be/0VJbnTBWvcQ?si=5f0Ti4cpmmunE7th"
